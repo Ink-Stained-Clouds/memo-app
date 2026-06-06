@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>备忘录</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>备忘录</h1>
+      <p>多任务+子任务，整点提醒，在线同步。</p>
+      <div id="status" class="status">正在连接...</div>
+    </header>
+
+    <section class="controls">
+      <input id="task-input" type="text" placeholder="新任务标题" />
+      <button id="add-task-button">新增任务</button>
+    </section>
+
+    <section id="reminder-banner" class="reminder-banner hidden">
+      <strong>整点提醒：</strong>检查你的备忘录并完成任务。
+      <button id="dismiss-reminder">收起</button>
+    </section>
+
+    <main id="task-list" class="task-list"></main>
+
+    <footer>
+      <p>打开多个设备访问同一个服务即可实时共享内容。</p>
+    </footer>
+  </div>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

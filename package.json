@@ -1,0 +1,16 @@
+{
+  "name": "memo-app",
+  "version": "1.0.0",
+  "description": "实时同步的备忘录应用，支持任务和子任务管理，整点提醒。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
